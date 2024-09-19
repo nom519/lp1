@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+  font-family: "Noto Sans JP",sans-serif;
+  color: #333;
+
+}
+.cover {
+
+  background-image: url("../assets/image/mainVisual_pc.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hamburger-button {
+  color: #fff
+}
