@@ -44,6 +44,7 @@ img {
     background-color: #fff;
     padding-left: 1.6rem;
     box-shadow: 0 .2rem .8rem rgba(0,0,0,0.1);
+    position: fixed;
 }
 
 
@@ -72,6 +73,7 @@ img {
     background-color: #0058ac;
     box-sizing: border-box;
     padding: 0 2rem 3.2rem;
+    display: none;
 
 }
 .sp-nav-list {
@@ -138,6 +140,7 @@ ul li:nth-child(3) {
     background-size: cover;
     background-position: top;
     border-top: #333;
+    width: 100%;
 }
 
 .cover .container {
@@ -256,10 +259,12 @@ h1.cover-title {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    max-width: 34.3rem;
-    margin: 0 auto;
+    margin: 0 1.6rem;
     box-sizing: border-box;
     line-height: 1;
+}
+.reason-item-body imag {
+    width: 100%;
 }
 .reason-item-body-point {
     font-family: Poppins,sans-serif;
@@ -333,8 +338,8 @@ h1.cover-title {
 }
 thead {
     background-color: #F5F5F5;
-  border: solid .1rem;
-  border-color: #ccc;
+    border: solid .1rem;
+    border-color: #ccc;
 }
 tbody  {
     border: solid .1rem;
@@ -408,24 +413,26 @@ td span {
     border-radius: 1.2rem 1.2rem 0 0;
     font-size: 1.8rem;
     font-weight: 700;
-    background-color: #F2F9FF;
+    background-color: #F0F0F0;
 }
 .tab-headers li.active {
     padding: 1.9rem 2rem;
     border-radius: 1.2rem 1.2rem 0 0;
-    background-color: #F0F0F0;
+    background-color: #F2F9FF;
 }
 
 .tab-content {
-    display: flex;
+    display: none;
     flex-direction: column;
     column-gap: 6;
     padding: 2.8rem 1.6rem;
     background-color: #F2F9FF;
+    width: 100%;
 }
 .tab-content.active {
-    display: block;
+    display: flex;
 }
+.tab-content
 
 .tab-content p,
 .tab-content.active p {
@@ -434,10 +441,14 @@ td span {
     margin-top: 1.2rem;
     margin-bottom: 2.8rem;
 }
-.tab-content img,
-.tab-content.active img {
+.tab-content p img,
+.tab-content.active p img {
     padding-right: 0.7rem;
 }
+
+
+
+
 
 
 .question-classes {
