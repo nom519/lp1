@@ -22,9 +22,6 @@
         <link rel="stylesheet" href="./assets/style/main.css">
 
 
-
-
-
     </head>
     <body>
         <!--ヘッダー-->
@@ -41,28 +38,39 @@
             <!--spナビゲーション-->
             <nav class="sp-nav">
                 <ul class="sp-nav-list">
-                    <li><img src="./assets/image/arrow_right_w.png" alt=""><a href="reason-title.html">選ばれる3つの理由</a></li>
-                    <li><img src="./assets/image/arrow_right_w.png" alt=""><a href="course-goal.html">コース・目的</a></li>
-                    <li><img src="./assets/image/arrow_right_w.png" alt=""><a href="fee.html">費用</a></li>
+                    <li class="sp-nav-list-text"><a href="reason.html"><img src="./assets/image/arrow_right_w.png" alt="" class="sp-nav-list-icon">選ばれる3つの理由</a></li>
+                    <li class="sp-nav-list-text"><a href="course-goal.html"><img src="./assets/image/arrow_right_w.png" alt="" class="sp-nav-list-icon">コース・目的</a></li>
+                    <li class="sp-nav-list-text"><a href="fee.html"><img src="./assets/image/arrow_right_w.png" alt="" class="sp-nav-list-icon">費用</a></li>
                 </ul>
                 <div class="sp-nav-button">
                     <a href="/entry" class="sp-nav-button-entry">入学説明会に申し込む</a>
                 </div>
+            </nav>
+
+            <!--pcナビゲーション-->
+            <nav class="pc-nav">
+                <ul class="pc-nav-list">
+                    <li class="pc-nav-list-text"><a href="reason.html">選ばれる3つの理由</a></li>
+                    <li class="pc-nav-list-text"><a href="course-goal.html">コース・目的</a></li>
+                    <li class="pc-nav-list-text"><a href="fee.html">費用</a></li>
+                </ul>
+                <div class="pc-nav-button"></div>
+                    <a href="/entry" class="pc-nav-button-entry">入学説明会に申し込む</a>
             </nav>
         </header>
 
         <main>
             <!--カバー-->
             <section class="cover">
-                <div class="cover-catch">
-                    <div class="container">
-                        <div class="cover-catch-item-left"><img src="./assets/image/sp_frame_left.png" alt=""></div>
-                        <div class="cover-catch-item-title">
-                            <p class="cover-catch-item-subtitle">難関大学の合格実績</p>
-                            <p class="cover-catch-item-01">No.<span>1</span></p>
-                        </div>
-                        <div class="cover-catch-item-right"><img src="./assets/image/sp_frame_right.png" alt=""></div>
+                <div class="cover-catch-container">
+                    <div class="cover-catch-item-left">
+                        <img src="./assets/image/sp_frame_left.png" alt=""></div>
+                    <div class="cover-catch-item-title">
+                        <p class="cover-catch-item-subtitle">難関大学の合格実績</p>
+                        <p class="cover-catch-item-01">No.<span>1</span></p>
                     </div>
+                    <div class="cover-catch-item-right">
+                        <img src="./assets/image/sp_frame_right.png" alt=""></div>
                 </div>
                 <div class="cover-title">
                     <p class="cover-subtitle">現役高校生・高卒生</p>
@@ -84,37 +92,38 @@
                 <div class="section-heading">
                     <h2 class="reason-title">選ばれる<span>3</span>つの理由</h2>
                 </div>
-                <div class="container">
-                    <div class="reason-item">
-                        <div class="reason-item-body">
-                            <img src="./assets/image/sp_reason_01.jpg" alt="">
-                            <h3 class="reason-item-body-point">point <span>1</span></h3>
-                            <p class="reason-item-body-title">実績のある講師陣だから安心</p>
-                            <p class="reason-item-body-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+
+                <div class="reason-container">
+                    <div class="reason-list1">
+                        <img src="./assets/image/sp_reason_01.jpg" alt="">
+                        <div class="reason-item">
+                            <h3 class="reason-item-point">Point <span>1</span></h3>
+                            <p class="reason-item-title">実績のある講師陣だから安心</p>
+                            <p class="reason-item-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         </div>
                     </div>
-                    <div class="reason-item">
-                        <div class="reason-item-body">
-                            <img src="./assets/image/sp_reason_02.jpg" alt="">
-                            <h3 class="reason-item-body-point">point <span>2</span></h3>
-                            <p class="reason-item-body-title">オンラインにも対応だから、早送り巻き戻し視聴できる。</p>
-                            <p class="reason-item-body-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    <div class="reason-list-row-reverse">
+                        <img src="./assets/image/sp_reason_02.jpg" alt="">
+                        <div class="reason-item-row-reverse">
+                            <h3 class="reason-item-point">Point <span>2</span></h3>
+                            <p class="reason-item-title">オンラインにも対応だから、早送り巻き戻し視聴できる。</p>
+                            <p class="reason-item-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         </div>
                     </div>
-                    <div class="reason-item">
-                        <div class="reason-item-body">
-                            <img src="./assets/image/sp_reason_03.jpg" alt="">
-                            <h3 class="reason-item-body-point">point <span>3</span></h3>
-                            <p class="reason-item-body-title">徹底した個別指導で、弱点を残さずそれぞれに合わせた大学受験対策。</p>
-                            <p class="reason-item-body-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    <div class="reason-list2">
+                        <img src="./assets/image/sp_reason_03.jpg" alt="">
+                        <div class="reason-item">
+                            <h3 class="reason-item-point">Point <span>3</span></h3>
+                            <p class="reason-item-title">徹底した個別指導で、弱点を残さずそれぞれに合わせた大学受験対策。</p>
+                            <p class="reason-item-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
                         </div>
                     </div>
                 </div>
             </section>
 
 
-            <!--ctaボタン-->
 
+            <!--ctaボタン-->
             <div class="cta">
                 <p class="cta-text">入学ご検討の方は、まずは入学説明会に<br>お越しください</p>
                 <a href="/entry" class="cta-button">入学説明会に申し込む</a>
@@ -125,11 +134,6 @@
                 <div class="section-heading">
                     <h2 class="course-goal-title">コース・目的</h2>
                 </div>
-
-
-
-
-
                 <div class="tabs">
                     <ul class="tab-headers">
                         <li class="active" data-tab="tab1">学年別から選ぶ</li>
@@ -138,24 +142,40 @@
                 </div>
                 <div class="tab-contents">
                     <div id="tab1" class="tab-content active">
-                        <a href="#"><img src="./assets/image/course_001.jpg" alt=""></a>
-                        <p><a href="#"><img src="./assets/image/arrow_right.png" alt="">高卒生</a></p>
-                        <img src="./assets/image/course_002.jpg" alt="">
-                        <p><img src="./assets/image/arrow_right.png" alt="">高校3年生</p>
-                        <img src="./assets/image/course_003.jpg" alt="course">
-                        <p><img src="./assets/image/arrow_right.png" alt="">高校2年生</p>
-                        <img src="./assets/image/course_004.jpg" alt="course">
-                        <p><img src="./assets/image/arrow_right.png" alt="">高校1年生</p>
+                        <div class="tab-content-item">
+                            <a href="#"><img src="./assets/image/course_001.jpg" alt="" class="tab-content-item-img1"></a>
+                            <p class="tab-content-item-text"><a href="#"><img src="./assets/image/arrow_right.png" alt="" class="tab-content-item-link-icon">高卒生</a></p>
+                        </div>
+                        <div class="tab-content-item">
+                            <a href="#"><img src="./assets/image/course_002.jpg" alt="" class="tab-content-item-img2"></a>
+                            <p class="tab-content-item-text"><a href="#"><img src="./assets/image/arrow_right.png" alt="" class="tab-content-item-link-icon">高校３年生</a></p>
+                        </div>
+                        <div class="tab-content-item">
+                            <a href="#"><img src="./assets/image/course_003.jpg" alt="" class="tab-content-item-img3"></a>
+                            <p class="tab-content-item-text"><a href="#"><img src="./assets/image/arrow_right.png" alt="" class="tab-content-item-link-icon">高校２年生</a></p>
+                        </div>
+                        <div class="tab-content-item">
+                            <a href="#"><img src="./assets/image/course_004.jpg" alt="" class="tab-content-item-img4"></a>
+                            <p class="tab-content-item-text"><a href="#"><img src="./assets/image/arrow_right.png" alt="" class="tab-content-item-link-icon">高校1年生</a></p>
+                        </div>
                     </div>
                     <div id="tab2" class="tab-content">
-                        <img src="./assets/image/purpose_001.jpg" alt="">
-                        <p><img src="./assets/image/arrow_right.png" alt="">難関大学・医学部合格を目指す</p>
-                        <img src="./assets/image/purpose_002.jpg" alt="">
-                        <p><img src="./assets/image/arrow_right.png" alt="">名門私立大学合格を目指す</p>
-                        <img src="./assets/image/purpose_003.jpg" alt="course">
-                        <p><img src="./assets/image/arrow_right.png" alt="">国公立大学合格を目指す</p>
-                        <img src="./assets/image/purpose_004.jpg" alt="course">
-                        <p><img src="./assets/image/arrow_right.png" alt="">海外の大学合格を目指す</p>
+                        <div class="tab-content-item">
+                            <a href="#"><img src="./assets/image/purpose_001.jpg" alt="" class="tab-content-item-img5"></a>
+                            <p class="tab-content-item-text"><a href="#"><img src="./assets/image/arrow_right.png" alt="" class="tab-content-item-link-icon">難関大学・医学部合格を目指す</a></p>
+                        </div>
+                        <div class="tab-content-item">
+                            <a href="#"><img src="./assets/image/purpose_002.jpg" alt="" class="tab-content-item-img6"></a>
+                            <p class="tab-content-item-text"><a href="#"><img src="./assets/image/arrow_right.png" alt="" class="tab-content-item-link-icon">名門私立大学合格を目指す</a></p>
+                        </div>
+                        <div class="tab-content-item">
+                            <a href="#"><img src="./assets/image/purpose_003.jpg" alt="" class="tab-content-item-img7"></a>
+                            <p class="tab-content-item-text"><a href="#"><img src="./assets/image/arrow_right.png" alt="" class="tab-content-item-link-icon">国公立大学合格を目指す</a></p>
+                        </div>
+                        <div class="tab-content-item">
+                            <a href="#"><img src="./assets/image/purpose_004.jpg" alt="" class="tab-content-item-img8"></a>
+                            <p class="tab-content-item-text"><a href="#"><img src="./assets/image/arrow_right.png" alt="" class="tab-content-item-link-icon">海外の大学合格を目指す</a></p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -213,7 +233,6 @@
                 <a href="/entry" class="cta-button">入学説明会に申し込む</a>
             </div>
 
-
             <!--質問・教室-->
             <section class="question-classes">
                 <div class="container">
@@ -239,6 +258,5 @@
             crossorigin="anonymous"></script>
         <script src="./assets/script/main.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     </body>
 </html>
