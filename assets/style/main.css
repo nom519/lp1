@@ -17,7 +17,6 @@ html {
         font-size: 62.5%; }
 }
 
-
 body {
     font-family: "Noto Sans JP",sans-serif;
     line-height: 1.75;
@@ -31,7 +30,6 @@ body {
     }
 }
 
-
 a {
     text-decoration: none;
     color: #333;
@@ -41,7 +39,6 @@ img {
     height: auto;
     vertical-align: bottom;
 }
-
 
 /* ヘッダー */
 .header {
@@ -109,35 +106,27 @@ img {
     text-align: left;
     background-color: #0058ac;
     display: none;
-    padding: 0 1.25rem 3.2rem;
+    padding: 0.1rem 0 3.2rem 1.6rem;
 }
 .sp-nav-list {
     padding: 0;
-
-}
-.sp-nav-list li {
-    margin-bottom: 1rem;
-
 }
 .sp-nav-list-text {
     list-style: none;
     font-size: 1.8rem;
     font-weight: 400;
-    width: 33.1rem;
+    width: 35rem;
     border-bottom: 0.1rem solid rgba(225,225,225,0.5);
 }
 .sp-nav-list-text a {
     display: flex;
     align-items: center;
     color: #fff;
-    padding: 1.925rem 0;
+    padding: 1.75rem 0 1.7rem .6rem;
     width: 100%;
 }
 .sp-nav-list-icon {
-    padding-right: 0.7rem;
-
-
-
+    padding-right: 1.1rem;
 }
 ul li:nth-child(3) {
     letter-spacing: .4rem;
@@ -149,19 +138,20 @@ ul li:nth-child(3) {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 33.5rem;
+    width: 35rem;
     height: 6.6rem;
     border: none;
     border-radius: 3.3rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #0058ac;
     background-color: #fff;
+    margin-left: 0.3rem;
 }
-
 .pc-nav {
     display: none;
 }
+
 /* pc ナビゲーション */
 @media (min-width: 768px) {
     .pc-nav {
@@ -176,7 +166,7 @@ ul li:nth-child(3) {
         display: inline-block;
         font-size: 2rem;
         font-weight: 400;
-        margin-right: 4.8rem;
+        margin-right: 4.5rem;
     }
     .pc-nav-button-entry {
         display: flex;
@@ -192,7 +182,6 @@ ul li:nth-child(3) {
         color: #fff;
     }
 }
-
 
 /* カバー */
 .cover {
@@ -273,7 +262,6 @@ h1.cover-title {
         content: url("../image/pc_frame_right.png");
         width: 5.26rem;
     }
-
     .cover-catch-item-subtitle {
         font-size: 2rem;
         padding: 1.5rem 2rem 0;
@@ -286,12 +274,9 @@ h1.cover-title {
     }
     .cover-catch-item-01 span {
         font-size: 7.4rem;
-
-
-
     }
     .cover-subtitle {
-        padding-top: 3rem;
+        margin-top: 1.4rem;
         font-size: 3.3rem;
         font-weight: 400;
     }
@@ -299,10 +284,9 @@ h1.cover-title {
         font-size: 6rem;
         font-weight: 900;
         line-height: 1.41;
-
+        padding-top: 1.3rem;
     }
 }
-
 
 /* ボタンリスト */
 .button-container {
@@ -325,7 +309,6 @@ h1.cover-title {
     font-weight: 700;
     text-align: center;
     color: #fff;
-
 }
 .button-inquiry {
     background-color: #77CB33;
@@ -342,7 +325,7 @@ h1.cover-title {
     .button-container {
         flex-direction: row;
         gap: 4rem;
-        margin: -3.75rem 0 8.9rem;
+        margin: -3.75rem 0 8.4rem;
     }
     .button-inquiry,
     .button-freetrial,
@@ -358,9 +341,8 @@ h1.cover-title {
     .button-inquiry:hover,
     .button-freetrial:hover,
     .button-request:hover {
-        opacity: 0.5;
+        opacity: 0.6;
     }
-
 }
 
 /* 選ばれる3つの理由 */
@@ -377,7 +359,6 @@ h1.cover-title {
     font-style: normal;
     font-size: 4rem;
     color: #F11F8D;
-
 }
 .reason-container {
     margin: 0 1.6rem;
@@ -400,7 +381,6 @@ h1.cover-title {
     font-style: italic;
     font-size: 2.4rem;
     color: #F11F8D;
-
 }
 .reason-item-point span {
     font-size: 3.6rem;
@@ -430,8 +410,8 @@ h1.cover-title {
     .reason-container {
         display: flex;
         flex-direction: column;
-        row-gap: 4.8rem;
-        margin: 0 auto 7.2rem;
+        row-gap: 3.3rem;
+        margin: 0 auto 6rem;
         line-height: 1;
         max-width: 116rem;
     }
@@ -462,27 +442,29 @@ h1.cover-title {
     .reason-list1 img,
     .reason-list2 img,
     .reason-item-row-reverse {
-        padding-right: 4rem;
+        padding-right: 2.2rem;
     }
     .reason-item,
     .reason-list-row-reverse img {
-        padding-left: 4rem;
+        padding-left: 2.2rem;
     }
     .reason-item-point {
         font-size: 2.8rem;
-        padding-top: 1.05rem;
+        padding-top: 0.8rem;
     }
     .reason-item-point span {
         font-size: 4.2rem;
         line-height: 1;
+        padding-left: 0;
     }
     .reason-item-title {
         font-size: 2.4rem;
         font-weight: 700;
-        padding-top: 1.3rem;
+        padding-top: .8rem;
+        line-height: 1.75;
     }
     .reason-item-text {
-        padding-top: 1.8rem;
+        padding-top: .5rem;
         padding-bottom: 2.4rem;
         font-size: 1.6rem;
         line-height: 1.75;
@@ -517,7 +499,6 @@ h1.cover-title {
     color: #fff;
     background: linear-gradient(to right,#0271E0,#53A2F0);
     margin-bottom: 0;
-
 }
 /* pc ctaボタン */
 @media (min-width: 768px) {
@@ -562,9 +543,6 @@ h1.cover-title {
     height: 6.5rem;
     max-width: 34.3rem;
     gap: 1.5rem;
-
-
-
 }
 .tab-headers li {
     width: 16.4rem;
@@ -607,12 +585,7 @@ h1.cover-title {
     width: 100%;
     height: auto;
 }
-
-
-
-
 .tab-content-item-text {
-
     font-size: 2rem;
     font-weight: 700;
     padding-top: 1.05rem;
@@ -620,7 +593,6 @@ h1.cover-title {
 }
 .tab-content-item-link-icon {
     padding-right: 0.7rem;
-
 }
 
 .tab-content-item a {
@@ -628,14 +600,11 @@ h1.cover-title {
     align-items: center;
 }
 
-
-
-
 /* pc コース・目的 */
 @media (min-width: 768px) {
     .course-goal-title {
         font-size: 3.6rem;
-        padding: 8.6rem 0 3.9rem;
+        padding: 7.1rem 0 2.3rem;
     }
     .tabs {
         margin: 0;
@@ -654,13 +623,13 @@ h1.cover-title {
         font-size: 2.4rem;
         width: 56rem;
         text-align: center;
-        padding-top: 1.9rem;
+        padding-top: 1.8rem;
     }
     .tab-headers li.active {
         font-size: 2.4rem;
         width: 56rem;
         text-align: center;
-        padding-top: 2.9rem;
+        padding-top: 1.8rem;
     }
     .tab-content {
         display: none;
@@ -710,17 +679,13 @@ h1.cover-title {
         content: url(../image/pc_purpose_04.jpg);
     }
     .tab-content-item-text {
-
         font-size: 2rem;
         font-weight: 700;
-        padding-top: 1.8rem;
-        padding-bottom: 3.2rem;
+        padding: 1.4rem 0 3.7rem;
     }
     .tab-content-item-link-icon {
-
-        padding-right: 0.7rem;
+        padding-right: 1.5rem;
     }
-
     .tab-content-item-img {
         cursor: pointer;
         max-width: 53.2rem;
@@ -738,12 +703,6 @@ h1.cover-title {
         transform: scale(1.2);
         border-radius: 1.2rem;
     }
-
-
-
-
-
-
 }
 
 /* 費用 */
@@ -809,12 +768,12 @@ td span {
 @media (min-width: 768px) {
     .fee-title {
         font-size: 3.6rem;
-        padding-top: 7.05rem;
+        padding-top: 8rem;
         padding-bottom: 3.9rem;
         letter-spacing: .4rem;
     }
     table {
-        margin-bottom: 7.2rem;
+        margin-bottom: 6.7rem;
     }
     th {
         width: 14.4rem;
@@ -825,11 +784,15 @@ td span {
         width: 45.2rem;
         height: 7.8rem;
         font-size: 3.2rem;
+        padding-right: 16rem;
     }
     td span {
         font-size: 1.8rem;
         font-weight: 500;
     }
+    thead th {
+        height: 7.8rem
+        }
 }
 
 /* 質問・教室 */
@@ -837,7 +800,6 @@ td span {
     display: flex;
     flex-direction: column;
 }
-
 .question-classes-faq {
     background-image: url("../image/sp_faq.jpg");
     background-size: cover;
@@ -908,7 +870,8 @@ td span {
         z-index: 1;
         font-size: 3.2rem;
         height: 32rem;
-        padding-top: 14.6rem;
+        padding-top: 13.5rem;
+        padding-left: 0.1rem;
         text-align: center;
     }
 }
