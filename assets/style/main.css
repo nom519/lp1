@@ -74,6 +74,7 @@ img {
         width: 24.1rem;
         height: 4.5rem;
 
+
     }
 }
 
@@ -122,14 +123,14 @@ img {
     list-style: none;
     font-size: 1.8rem;
     font-weight: 400;
-    height: 6.7rem;
     width: 33.1rem;
     border-bottom: 0.1rem solid rgba(225,225,225,0.5);
 }
 .sp-nav-list-text a {
     display: flex;
+    align-items: center;
     color: #fff;
-    padding: 1.925rem 13rem 1.925rem 0;
+    padding: 1.925rem 0;
     width: 100%;
 }
 .sp-nav-list-icon {
@@ -195,8 +196,6 @@ ul li:nth-child(3) {
 
 /* カバー */
 .cover {
-
-
     height: 25rem;
     background-image: url("../image/mainvisual_sp.jpg");
     background-size: cover;
@@ -207,18 +206,16 @@ ul li:nth-child(3) {
     margin: 0 1.6rem 0;
     padding-top: 3.4rem;
 }
-
 .cover-catch-container {
     display: flex;
 }
-
 .cover-catch-item-title {
     text-align: center;
     vertical-align: middle;
 }
 .cover-catch-item-subtitle {
     font-size: 1.1rem;
-    padding-top: 0.1rem;
+    padding-top: 0;
 }
 .cover-catch-item-01 {
     font-family: Poppins, sans-serif;
@@ -226,10 +223,11 @@ ul li:nth-child(3) {
     font-style: italic;
     font-size: 2.5rem;
     color: #F11F8D;
-    padding-top: 1.8rem;
+    padding-top: 0.5rem;
 }
 .cover-catch-item-01 span {
     font-size: 3.6rem;
+    line-height: 1;
 }
 .cover-catch-item-left,
 .cover-catch-item-right {
@@ -240,10 +238,10 @@ ul li:nth-child(3) {
     width: 100%;
 }
 .cover-subtitle {
-    padding-top: 2.07rem;
+    padding: 2.5rem 0 0.2rem;
+    line-height: 1;
     font-size: 1.4rem;
     font-weight: 400;
-
 }
 h1.cover-title {
     font-size: 2.5rem;
@@ -278,21 +276,22 @@ h1.cover-title {
 
     .cover-catch-item-subtitle {
         font-size: 2rem;
-        padding-top: 1.6rem;
+        padding: 1.5rem 2rem 0;
         line-height: 1;
     }
     .cover-catch-item-01 {
         font-size: 5.4rem;
-        line-height: 1;
+        padding-top: 1.5rem;
+        padding-left: 0.8rem;
     }
     .cover-catch-item-01 span {
         font-size: 7.4rem;
-        line-height: 1;
-        padding-top: 3.1rem;
+
+
 
     }
     .cover-subtitle {
-        padding-top: 4.3rem;
+        padding-top: 3rem;
         font-size: 3.3rem;
         font-weight: 400;
     }
@@ -300,7 +299,7 @@ h1.cover-title {
         font-size: 6rem;
         font-weight: 900;
         line-height: 1.41;
-        padding-top: 1.3rem;
+
     }
 }
 
@@ -312,7 +311,7 @@ h1.cover-title {
     gap: 1.2rem;
     justify-content: center;
     align-items: center;
-    margin: 2.4rem auto 2.1rem;
+    margin: 2.4rem auto 1.7rem;
 }
 .button-inquiry,
 .button-freetrial,
@@ -353,7 +352,7 @@ h1.cover-title {
         border-radius: 3.8rem;
         font-size: 2.4rem;
         font-weight: 700;
-        padding-top: 2.7rem;
+        padding-top: 1.8rem;
         transition: .4s;
     }
     .button-inquiry:hover,
@@ -370,7 +369,7 @@ h1.cover-title {
     font-size: 2.8rem;
     font-weight: 700;
     width: 100%;
-    padding-bottom: 1.85rem;
+    padding-bottom: 1rem;
 }
 .reason-title span {
     font-family: Poppins,sans-serif;
@@ -393,7 +392,7 @@ h1.cover-title {
 .reason-list2 img,
 .reason-list-row-reverse img {
     width: 100%;
-    padding-bottom: .75rem;
+    padding-bottom: 1.45rem;
 }
 .reason-item-point {
     font-family: Poppins,sans-serif;
@@ -406,24 +405,24 @@ h1.cover-title {
 .reason-item-point span {
     font-size: 3.6rem;
     padding-bottom: .15rem;
+    padding-left: .2rem;
+    line-height: 1;
 }
 .reason-item-title {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.4;
-    padding-bottom: 3.4rem;
+    padding-bottom: 1.1rem;
 }
 .reason-item-text {
     padding-bottom: 3.4rem;
     font-size: 1.6rem;
-    line-height: 1.75;
 }
 
 /* pc 選ばれる3つの理由 */
 @media (min-width: 768px)  {
     .reason-title {
         font-size: 3.6rem;
-        line-height: 1;
     }
     .reason-title span {
         font-size: 5.4rem;
@@ -471,8 +470,7 @@ h1.cover-title {
     }
     .reason-item-point {
         font-size: 2.8rem;
-        line-height: 1;
-        padding-top: 2.1rem;
+        padding-top: 1.05rem;
     }
     .reason-item-point span {
         font-size: 4.2rem;
@@ -481,7 +479,6 @@ h1.cover-title {
     .reason-item-title {
         font-size: 2.4rem;
         font-weight: 700;
-        line-height: 1.75;
         padding-top: 1.3rem;
     }
     .reason-item-text {
@@ -550,7 +547,7 @@ h1.cover-title {
     text-align: center;
     font-size: 2.8rem;
     font-weight: 700;
-    padding: 6.9rem 0 2.1rem;
+    padding: 6rem 0 1.8rem;
 }
 .tabs {
     width: 100%;
@@ -560,13 +557,19 @@ h1.cover-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 1.6rem;
+    margin: 0 auto;
     list-style: none;
-    height: 6rem;
-    border-radius: 1.2rem 1.2rem 0 0;
+    height: 6.5rem;
+    max-width: 34.3rem;
+    gap: 1.5rem;
+
+
+
 }
 .tab-headers li {
-    padding: 1.9rem 2rem;
+    width: 16.4rem;
+    text-align: center;
+    padding-top: 1.6rem;
     cursor: pointer;
     border-radius: 1.2rem 1.2rem 0 0;
     font-size: 1.8rem;
@@ -575,7 +578,9 @@ h1.cover-title {
     background-color: #F0F0F0;
 }
 .tab-headers li.active {
-    padding: 1.9rem 2rem;
+    width: 16.4rem;
+    text-align: center;
+    padding-top: 1.6rem;
     border-radius: 1.2rem 1.2rem 0 0;
     color: #333;
     background-color: #F2F9FF;
@@ -586,7 +591,7 @@ h1.cover-title {
     padding: 2.8rem 1.6rem;
     background-color: #F2F9FF;
     width: 100%;
-    margin-bottom: 6.3rem;
+    margin-bottom: 5.8rem;
 }
 .tab-content.active {
     display: flex;
@@ -607,15 +612,24 @@ h1.cover-title {
 
 
 .tab-content-item-text {
-    height: 6.9rem;
+
     font-size: 2rem;
     font-weight: 700;
-    padding-top: 1.8rem;
-    padding-bottom: 3.2rem;
+    padding-top: 1.05rem;
+    padding: 1rem 0 2.5rem;
 }
 .tab-content-item-link-icon {
-    margin-right: 0.7rem
+    padding-right: 0.7rem;
+
 }
+
+.tab-content-item a {
+    display: flex;
+    align-items: center;
+}
+
+
+
 
 /* pc コース・目的 */
 @media (min-width: 768px) {
@@ -640,10 +654,12 @@ h1.cover-title {
         font-size: 2.4rem;
         width: 56rem;
         text-align: center;
-        padding-top: 2.9rem;
+        padding-top: 1.9rem;
     }
     .tab-headers li.active {
         font-size: 2.4rem;
+        width: 56rem;
+        text-align: center;
         padding-top: 2.9rem;
     }
     .tab-content {
@@ -694,16 +710,17 @@ h1.cover-title {
         content: url(../image/pc_purpose_04.jpg);
     }
     .tab-content-item-text {
-        height: 6.9rem;
+
         font-size: 2rem;
         font-weight: 700;
         padding-top: 1.8rem;
         padding-bottom: 3.2rem;
     }
     .tab-content-item-link-icon {
-        width: 1.731rem;
-        margin-right: 0.7rem
+
+        padding-right: 0.7rem;
     }
+
     .tab-content-item-img {
         cursor: pointer;
         max-width: 53.2rem;
@@ -741,8 +758,7 @@ h1.cover-title {
     font-size: 2.8rem;
     font-weight: 700;
     line-height: 1;
-    padding-top: 6.4rem;
-    padding-bottom: 2.5rem;
+    padding: 7rem 0 2.5rem;
     letter-spacing: .4rem;
 }
 thead {
@@ -762,7 +778,7 @@ table {
     border: solid .3rem;
     border-color: #ccc;
     border-collapse: collapse;
-    margin-bottom: 6.7rem;
+    margin-bottom: 6.1rem;
 }
 th {
     width: 11.8rem;
@@ -770,6 +786,10 @@ th {
     font-size: 1.6rem;
     font-weight: 400;
 }
+thead th {
+    height: 6.7rem
+    }
+
 td {
     width: 22.2rem;
     height: 6.4rem;
@@ -777,7 +797,8 @@ td {
     font-weight: 700;
     font-size: 2.8rem;
     color: #F11F8D;
-    text-align: center;
+    text-align: right;
+    padding-right: 5.6rem;
 }
 td span {
     font-size: 1.6rem;
@@ -788,8 +809,7 @@ td span {
 @media (min-width: 768px) {
     .fee-title {
         font-size: 3.6rem;
-        line-height: 1;
-        padding-top: 8.4rem;
+        padding-top: 7.05rem;
         padding-bottom: 3.9rem;
         letter-spacing: .4rem;
     }
@@ -821,14 +841,12 @@ td span {
 .question-classes-faq {
     background-image: url("../image/sp_faq.jpg");
     background-size: cover;
-    background-position: top;
     height: 17rem;
     width: 100%;
 }
 .question-classes-search {
     background-image: url("../image/sp_classrooms.jpg");
     background-size: cover;
-    background-position: top;
     height: 17rem;
     width: 100%;
 }
