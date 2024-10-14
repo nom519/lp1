@@ -59,6 +59,9 @@ img {
     height: 3.4rem;
     vertical-align: middle;
 }
+.header-logo img {
+    width: 100%;
+}
 /* pc ヘッダー */
 @media (min-width:768px) {
     .header {
@@ -70,8 +73,6 @@ img {
         content: url('../image/pc_logo.png');
         width: 24.1rem;
         height: 4.5rem;
-
-
     }
 }
 
@@ -517,6 +518,8 @@ h1.cover-title {
         height: 7.5rem;
         border-radius: 3.8rem;
         font-size: 2.4rem;
+        justify-content: left;
+        padding-left: 7rem;
     }
 }
 
