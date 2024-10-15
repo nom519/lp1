@@ -1,20 +1,23 @@
 @charset "UTF-8";
 
 html {
-  font-size: calc(10 * 100vw / 375); /* 390はSPデザインカンプの幅 */
-  /* 変換サイト・ツールなどで、 390pxの幅での10pxを変換して2.56vwなのでそれを当ててもよい */
-  /* font-size: 2.564102vw; */
+    font-size: calc(10 * 100vw / 375);
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
 }
 
 @media (min-width:768px) {
 html {
-        font-size: calc(10 * 100vw / 1200); /* 1200はPCカンプのコンテンツ幅 */
-}
+        font-size: calc(10 * 100vw / 1200);
+        scroll-padding-top: 5rem;
+        scroll-behavior: smooth;
+    }
 }
 
 @media (min-width: 1200px) {
 html {
-        font-size: 62.5%; }
+        font-size: 62.5%;
+    }
 }
 
 body {
@@ -54,10 +57,14 @@ img {
     top: 0;
     z-index: 10;
 }
-.header-logo {
+.header-logo .sp {
     width: 16.6rem;
     height: 3.4rem;
-    vertical-align: middle;
+    padding-top: .8rem;
+    display: block;
+}
+.header-logo .pc {
+    display: none;
 }
 .header-logo img {
     width: 100%;
@@ -69,10 +76,14 @@ img {
         padding-left: 0;
         height: 10.1rem;
     }
-    .header-logo {
-        content: url('../image/pc_logo.png');
+    .header-logo .pc {
         width: 24.1rem;
         height: 4.5rem;
+        padding-top: .7rem;
+        display: block;
+    }
+    .header-logo .sp {
+        display: none;
     }
 }
 
@@ -168,6 +179,10 @@ ul li:nth-child(3) {
         font-size: 2rem;
         font-weight: 400;
         margin-right: 4.5rem;
+        transition: .4s;
+    }
+    .pc-nav-list li:hover {
+        opacity: .6;
     }
     .pc-nav-button-entry {
         display: flex;
@@ -181,13 +196,17 @@ ul li:nth-child(3) {
         font-weight: 700;
         background: linear-gradient(to right,#0271E0,#53A2F0);
         color: #fff;
+        transition: .4s;
+    }
+    .pc-nav-button-entry:hover {
+        opacity: .6;
     }
 }
 
 /* カバー */
 .cover {
     height: 25rem;
-    background-image: url("../image/mainvisual_sp.jpg");
+    background-image: url(/assets/image/sp_main_visual.jpg);
     background-size: cover;
     background-position: right;
     width: 100%;
@@ -213,7 +232,7 @@ ul li:nth-child(3) {
     font-style: italic;
     font-size: 2.5rem;
     color: #F11F8D;
-    padding-top: 0.5rem;
+    padding-top: 0.4rem;
 }
 .cover-catch-item-01 span {
     font-size: 3.6rem;
@@ -228,7 +247,7 @@ ul li:nth-child(3) {
     width: 100%;
 }
 .cover-subtitle {
-    padding: 2.5rem 0 0.2rem;
+    padding: 2.4rem 0 0.2rem;
     line-height: 1;
     font-size: 1.4rem;
     font-weight: 400;
@@ -243,7 +262,7 @@ h1.cover-title {
 /* pc カバー */
 @media (min-width: 768px) {
     .cover {
-        background-image: url("../image/mainvisual_pc.jpg");
+        background-image: url(/assets/image/pc_main_visual.jpg);
         height: 65.1rem;
         background-position: bottom;
 
@@ -256,11 +275,11 @@ h1.cover-title {
 
     }
     .cover-catch-item-left {
-        content: url("../image/pc_frame_left.png");
+        content: url(/assets/image/pc_frame_left.svg);
         width: 5.26rem;
     }
     .cover-catch-item-right {
-        content: url("../image/pc_frame_right.png");
+        content: url(/assets/image/pc_frame_right.svg);
         width: 5.26rem;
     }
     .cover-catch-item-subtitle {
@@ -284,7 +303,7 @@ h1.cover-title {
     h1.cover-title {
         font-size: 6rem;
         font-weight: 900;
-        line-height: 1.41;
+        line-height: 1.42;
         padding-top: 1.3rem;
     }
 }
@@ -296,7 +315,7 @@ h1.cover-title {
     gap: 1.2rem;
     justify-content: center;
     align-items: center;
-    margin: 2.4rem auto 1.7rem;
+    margin: 2.4rem auto 0;
 }
 .button-inquiry,
 .button-freetrial,
@@ -326,7 +345,7 @@ h1.cover-title {
     .button-container {
         flex-direction: row;
         gap: 4rem;
-        margin: -3.75rem 0 8.4rem;
+        margin: -3.75rem 0 0;
     }
     .button-inquiry,
     .button-freetrial,
@@ -342,7 +361,7 @@ h1.cover-title {
     .button-inquiry:hover,
     .button-freetrial:hover,
     .button-request:hover {
-        opacity: 0.6;
+        opacity: .6;
     }
 }
 
@@ -352,7 +371,7 @@ h1.cover-title {
     font-size: 2.8rem;
     font-weight: 700;
     width: 100%;
-    padding-bottom: 1rem;
+    padding: .1rem 0 1.05rem;
 }
 .reason-title span {
     font-family: Poppins,sans-serif;
@@ -363,6 +382,7 @@ h1.cover-title {
 }
 .reason-container {
     margin: 0 1.6rem;
+    padding: 1.6rem 0 .1rem;
 }
 .reason-lsit1,
 .reason-list2
@@ -393,7 +413,7 @@ h1.cover-title {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.4;
-    padding-bottom: 1.1rem;
+    padding: .1rem 0 1.05rem;
 }
 .reason-item-text {
     padding-bottom: 3.4rem;
@@ -415,6 +435,7 @@ h1.cover-title {
         margin: 0 auto 6rem;
         line-height: 1;
         max-width: 116rem;
+        padding-top: 8.3rem;
     }
     .reason-list1,
     .reason-list2,
@@ -427,13 +448,13 @@ h1.cover-title {
         flex-direction: row-reverse;
     }
     .reason-list1 img {
-        content: url(../image/pc_reason_01.jpg);
+        content: url(/assets/image/pc_reason_01.jpg);
     }
     .reason-list-row-reverse img {
-        content: url(../image/pc_reason_02.jpg);
+        content: url(/assets/image/pc_reason_02.jpg);
     }
     .reason-list2 img {
-        content: url(../image/pc_reason_03.jpg);
+        content: url(/assets/image/pc_reason_03.jpg);
     }
     .reason-list1 img,
     .reason-list2 img,
@@ -447,11 +468,11 @@ h1.cover-title {
     }
     .reason-item,
     .reason-list-row-reverse img {
-        padding-left: 2.2rem;
+        padding-left: 2rem;
     }
     .reason-item-point {
         font-size: 2.8rem;
-        padding-top: 0.8rem;
+        padding-top: 0.9rem;
     }
     .reason-item-point span {
         font-size: 4.2rem;
@@ -461,12 +482,11 @@ h1.cover-title {
     .reason-item-title {
         font-size: 2.4rem;
         font-weight: 700;
-        padding-top: .8rem;
+        padding-top: .4rem;
         line-height: 1.75;
     }
     .reason-item-text {
-        padding-top: .5rem;
-        padding-bottom: 2.4rem;
+        padding: .5rem 0 2.4rem;
         font-size: 1.6rem;
         line-height: 1.75;
     }
@@ -476,7 +496,6 @@ h1.cover-title {
 .cta {
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     height: 21.3rem;
     background-color: rgba(255, 85, 85, 0.1);
@@ -485,7 +504,7 @@ h1.cover-title {
     text-align: center;
     font-size: 1.6rem;
     line-height: 1.75;
-    padding-bottom: 1rem;
+    padding-top: 3.7rem;
 }
 .cta-button {
     display: flex;
@@ -499,7 +518,7 @@ h1.cover-title {
     font-weight: 700;
     color: #fff;
     background: linear-gradient(to right,#0271E0,#53A2F0);
-    margin-bottom: 0;
+    margin-top:1rem;
 }
 /* pc ctaボタン */
 @media (min-width: 768px) {
@@ -508,7 +527,7 @@ h1.cover-title {
     }
     .cta-text {
         font-size: 1.6rem;
-        padding-bottom: 2rem;
+        padding: 5.2rem 0 .8rem;
     }
     .cta-text br {
         display: none;
@@ -520,6 +539,10 @@ h1.cover-title {
         font-size: 2.4rem;
         justify-content: left;
         padding-left: 7rem;
+        transition: .4s;
+    }
+    .cta-button:hover {
+        opacity: .6;
     }
 }
 
@@ -531,7 +554,7 @@ h1.cover-title {
     text-align: center;
     font-size: 2.8rem;
     font-weight: 700;
-    padding: 6rem 0 1.8rem;
+    padding: 5.7rem 0 1.8rem 1.4rem;
 }
 .tabs {
     width: 100%;
@@ -550,7 +573,7 @@ h1.cover-title {
 .tab-headers li {
     width: 16.4rem;
     text-align: center;
-    padding-top: 1.6rem;
+    padding-top: 1.7rem;
     cursor: pointer;
     border-radius: 1.2rem 1.2rem 0 0;
     font-size: 1.8rem;
@@ -561,7 +584,7 @@ h1.cover-title {
 .tab-headers li.active {
     width: 16.4rem;
     text-align: center;
-    padding-top: 1.6rem;
+    padding-top: 1.7rem;
     border-radius: 1.2rem 1.2rem 0 0;
     color: #333;
     background-color: #F2F9FF;
@@ -572,30 +595,38 @@ h1.cover-title {
     padding: 2.8rem 1.6rem;
     background-color: #F2F9FF;
     width: 100%;
-    margin-bottom: 5.8rem;
+    margin-bottom: 6.4rem;
 }
 .tab-content.active {
     display: flex;
 }
-.tab-content-item-img1,
-.tab-content-item-img2,
-.tab-content-item-img3,
-.tab-content-item-img4,
-.tab-content-item-img5,
-.tab-content-item-img6,
-.tab-content-item-img7,
-.tab-content-item-img8 {
+
+.tab-content-item-img img {
     width: 100%;
     height: auto;
+}
+.tab content-item .sp {
+    display: block;
+}
+.tab-content-item .pc {
+    display: none;
 }
 .tab-content-item-text {
     font-size: 2rem;
     font-weight: 700;
     padding-top: 1.05rem;
-    padding: 1rem 0 2.5rem;
+    padding: .88rem 0 2.5rem;
+    transition: .4s;
+}
+.tab-content-item-text:hover {
+    opacity: .6;
 }
 .tab-content-item-link-icon {
-    padding-right: 0.7rem;
+    height: 1.184rem;
+    padding-right: 0.75rem;
+}
+.tab-content-item-link-icon img {
+    width: 100%;
 }
 
 .tab-content-item a {
@@ -607,7 +638,7 @@ h1.cover-title {
 @media (min-width: 768px) {
     .course-goal-title {
         font-size: 3.6rem;
-        padding: 7.1rem 0 2.3rem;
+        padding: 6.8rem 0 2.3rem;
     }
     .tabs {
         margin: 0;
@@ -624,7 +655,7 @@ h1.cover-title {
     }
     .tab-headers li {
         font-size: 2.4rem;
-        width: 56rem;
+        width: 56.4rem;
         text-align: center;
         padding-top: 1.8rem;
     }
@@ -657,38 +688,23 @@ h1.cover-title {
         width: 53.2rem;
         height: auto;
     }
-    .tab-content-item-img1 {
-        content: url(../image/pc_cource_01.jpg);
+    .tab-content-item .sp {
+        display: none;
     }
-    .tab-content-item-img2 {
-        content: url(../image/pc_cource_02.jpg);
+    .tab-content-item .pc {
+        display: block;
     }
-    .tab-content-item-img3 {
-        content: url(../image/pc_cource_03.jpg);
-    }
-    .tab-content-item-img4 {
-        content: url(../image/pc_cource_04.jpg);
-    }
-    .tab-content-item-img5 {
-        content: url(../image/pc_purpose_01.jpg);
-    }
-    .tab-content-item-img6 {
-        content: url(../image/pc_purpose_02.jpg);
-    }
-    .tab-content-item-img7 {
-        content: url(../image/pc_purpose_03.jpg);
-    }
-    .tab-content-item-img8 {
-        content: url(../image/pc_purpose_04.jpg);
-    }
+
     .tab-content-item-text {
         font-size: 2rem;
         font-weight: 700;
         padding: 1.4rem 0 3.7rem;
     }
     .tab-content-item-link-icon {
-        padding-right: 1.5rem;
+        height: 1.584rem;
+        padding-right: 1rem;
     }
+
     .tab-content-item-img {
         cursor: pointer;
         max-width: 53.2rem;
@@ -720,13 +736,11 @@ h1.cover-title {
     font-size: 2.8rem;
     font-weight: 700;
     line-height: 1;
-    padding: 7rem 0 2.5rem;
+    padding: 6.9rem 0 2.5rem 1.9rem;
     letter-spacing: .4rem;
 }
 thead {
     background-color: #F5F5F5;
-    border: solid .1rem;
-    border-color: #ccc;
 }
 tbody  {
     border: solid .1rem;
@@ -740,18 +754,20 @@ table {
     border: solid .3rem;
     border-color: #ccc;
     border-collapse: collapse;
-    margin-bottom: 6.1rem;
+    margin-bottom: 6.2rem;
 }
 th {
-    width: 11.8rem;
-    height: 6.4rem;
+    width: 11.6rem;
+    height: 6rem;
     font-size: 1.6rem;
     font-weight: 400;
+    padding-top: .2rem;
 }
 thead th {
-    height: 6.7rem
-    }
-
+    height: 6.7rem;
+    text-align: left;
+    padding-left: 2.5rem;
+}
 td {
     width: 22.2rem;
     height: 6.4rem;
@@ -760,7 +776,7 @@ td {
     font-size: 2.8rem;
     color: #F11F8D;
     text-align: right;
-    padding-right: 5.6rem;
+    padding-right: 5.7rem;
 }
 td span {
     font-size: 1.6rem;
@@ -771,12 +787,11 @@ td span {
 @media (min-width: 768px) {
     .fee-title {
         font-size: 3.6rem;
-        padding-top: 8rem;
-        padding-bottom: 3.9rem;
         letter-spacing: .4rem;
+        padding: 8rem 0 3.9rem .4rem;
     }
     table {
-        margin-bottom: 6.7rem;
+        margin-bottom: 7.1rem;
     }
     th {
         width: 14.4rem;
@@ -794,8 +809,12 @@ td span {
         font-weight: 500;
     }
     thead th {
-        height: 7.8rem
-        }
+        height: 7.8rem;
+        border: solid .1rem;
+        border-color: #ccc;
+        text-align: center;
+        padding-right: 2.4rem;
+    }
 }
 
 /* 質問・教室 */
@@ -804,13 +823,13 @@ td span {
     flex-direction: column;
 }
 .question-classes-faq {
-    background-image: url("../image/sp_faq.jpg");
+    background-image: url(/assets/image/sp_faq.jpg);
     background-size: cover;
     height: 17rem;
     width: 100%;
 }
 .question-classes-search {
-    background-image: url("../image/sp_classrooms.jpg");
+    background-image: url(/assets/image/sp_classrooms.jpg);
     background-size: cover;
     height: 17rem;
     width: 100%;
@@ -824,7 +843,7 @@ td span {
     font-weight: 700;
     color: #fff;
     padding-left: 1.6rem;
-    padding-top: 6.7rem;
+    padding-top: 6.5rem;
 }
 
 /* pc 質問・教室*/
@@ -843,38 +862,35 @@ td span {
         width: 100%;
     }
     .question-classes-faq-box {
-        background-image: url("../image/pc_faq.jpg");
+        background-image: url(/assets/image/pc_faq.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 32rem;
-        transition: transform .6s ease;
+        transition: transform .4s ease;
         max-width: 100%;
     }
     .question-classes-search-box {
-        background-image: url("../image/pc_classrooms.jpg");
+        background-image: url(/assets/image/pc_classrooms.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 32rem;
-        transition: transform .6s ease;
+        transition: transform .4s ease;
         max-width: 100%;
     }
-
     .question-classes-faq:hover .question-classes-faq-box,
     .question-classes-search:hover .question-classes-search-box {
         transform: scale(1.2);
     }
     .question-classes-faq-title,
     .question-classes-search-title {
-        pointer-events: none;
         position: absolute;
         width: 100%;
         z-index: 1;
         font-size: 3.2rem;
         height: 32rem;
-        padding-top: 13.5rem;
-        padding-left: 0.1rem;
+        padding: 13.1rem 0 .1rem 0;
         text-align: center;
     }
 }
@@ -882,11 +898,10 @@ td span {
 /* フッター */
 .footer-copyright {
     height: 8.3rem;
-    padding-top: 3.2rem ;
+    padding: 3.1rem 0 0 3.1rem;
     font-family: Poppins,sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
-    text-align: center;
     color: #333;
     background-color: #ddd;
 }
@@ -894,7 +909,7 @@ td span {
 /* pc フッター*/
 @media (min-width: 768px) {
     .footer-copyright {
-        height: 12rem;
-        padding-top: 5rem;
+        text-align: center;
+        padding: 4.7rem 0 7rem;
     }
 }

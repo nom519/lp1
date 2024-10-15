@@ -2,8 +2,11 @@ $(document).ready(function(){
 	$(".hamburger-button").on("click", function(){
 		$(".sp-nav").slideToggle();
 	});
-});
 
+    $(".sp-nav-list").on("click", function(){
+        $(".sp-nav").slideToggle("active");
+    });
+});
 
 $(document).ready(function(){
     $('.tab-headers li').click(function(){
