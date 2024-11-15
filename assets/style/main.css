@@ -497,14 +497,19 @@ h1.cover-title {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 21.3rem;
     background-color: rgba(255, 85, 85, 0.1);
+    padding: 3.7rem 0 4rem 0;
 }
 .cta-text {
     text-align: center;
     font-size: 1.6rem;
     line-height: 1.75;
-    padding-top: 3.7rem;
+    margin-bottom: 1rem;
+}
+.cta-button-wrap {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
 }
 .cta-button {
     display: flex;
@@ -518,19 +523,23 @@ h1.cover-title {
     font-weight: 700;
     color: #fff;
     background: linear-gradient(to right,#0271E0,#53A2F0);
-    margin-top:1rem;
 }
 /* pc ctaボタン */
 @media (min-width: 768px) {
     .cta {
         height: 23.1rem;
+        padding: 5.2rem 0 5.6rem 0;
     }
     .cta-text {
         font-size: 1.6rem;
-        padding: 5.2rem 0 .8rem;
+        margin-bottom: 1.8rem;
     }
     .cta-text br {
         display: none;
+    }
+    .cta-button-wrap {
+        flex-direction: row;
+        column-gap: 4rem;
     }
     .cta-button {
         width: 36rem;
