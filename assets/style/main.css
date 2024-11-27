@@ -511,7 +511,8 @@ h1.cover-title {
     flex-direction: column;
     row-gap: 1.2rem;
 }
-.cta-button {
+.cta-button,
+.cta-button-freetrial {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -522,7 +523,12 @@ h1.cover-title {
     font-size: 2rem;
     font-weight: 700;
     color: #fff;
+}
+.cta-button {
     background: linear-gradient(to right,#0271E0,#53A2F0);
+}
+.cta-button-freetrial {
+    background-color: #F6AA00;
 }
 /* pc ctaボタン */
 @media (min-width: 768px) {
@@ -541,7 +547,8 @@ h1.cover-title {
         flex-direction: row;
         column-gap: 4rem;
     }
-    .cta-button {
+    .cta-button,
+    .cta-button-freetrial {
         width: 36rem;
         height: 7.5rem;
         border-radius: 3.8rem;
@@ -550,7 +557,8 @@ h1.cover-title {
         padding-left: 7rem;
         transition: .4s;
     }
-    .cta-button:hover {
+    .cta-button:hover,
+    .cta-button-freetrial:hover {
         opacity: .6;
     }
 }
